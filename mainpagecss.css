@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Cabin',sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background:white;
+  color: white;
+}
+
+.header img {
+    width:300px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  margin: 14px 100px;
+  padding:8px;
+  margin-left:20px;
+  margin-right:20px;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+.introtext{
+    margin-top:140px;
+    margin-left:140px;
+    margin-right:140px;
+    
+}
+.midtext{
+    margin-top:240px;
+    margin-left:140px;
+    margin-right:140px;
+    margin-bottom:150px;
+    
+}
+
+.endtext{
+    margin-top:100px;
+    margin-left:120px;
+    margin-right:140px;
+    margin-bottom:250px;
+}
+
+.yoga4image img{
+    margin-left:125px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.yoga1image img{
+    margin-left:150px;
+    margin-top:50px;
+}
+
+.yoga3image img{
+    margin-left:250px;
+    margin-top:0px;
+}
+
+.bttn-default {
+    color: #fff;
+  }
+  .bttn-primary,
+  .bttn,
+  .bttn-lg,
+  .bttn-md,
+  .bttn-sm,
+  .bttn-xs {
+    color: #1d89ff;
+  }
+  .bttn-warning {
+    color: #feab3a;
+  }
+  .bttn-danger {
+    color: #ff5964;
+  }
+  .bttn-success {
+    color: #28b78d;
+  }
+  .bttn-royal {
+    color: #bd2df5;
+  }
+  .bttn,
+  .bttn-lg,
+  .bttn-md,
+  .bttn-sm,
+  .bttn-xs {
+    display:flex;
+    float:right;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-color: transparent;
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+  }
+  .bttn-lg {
+    padding: 8px 15px;
+    font-size: 24px;
+    font-family: inherit;
+  }
+  .bttn-md {
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px 12px;
+  }
+  .bttn-sm {
+    padding: 4px 10px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  .bttn-xs {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: inherit;
+  }
+  .bttn-pill {
+    
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-color: transparent;
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left:130px;
+    margin-bottom:100px;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px 12px;
+    z-index: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 100px;
+    background: #fff;
+    color: darkcyan;
+    -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .bttn-pill:before,
+  .bttn-pill:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: darkcyan;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    -webkit-transform: translate(100%, -25%) translate3d(0, 0, 0);
+            transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+  .bttn-pill:hover,
+  .bttn-pill:focus {
+    box-shadow: 0 1px 8px rgba(58,51,53,0.3);
+    color:darkcyan;
+    -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+            transform: scale(1.1) translate3d(0, 0, 0);
+  }
+  .bttn-pill:hover:before,
+  .bttn-pill:focus:before {
+    opacity: 0.15;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: translate3d(50%, 0, 0) scale(0.9);
+            transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+  .bttn-pill:hover:after,
+  .bttn-pill:focus:after {
+    opacity: 0.25;
+    -webkit-transition: opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s 0.05s cubic-bezier(0.02, 0.01, 0.47, 1);
+    -webkit-transform: translate(50%, 0) scale(1.1);
+            transform: translate(50%, 0) scale(1.1);
+  }
+  .bttn-pill.bttn-xs {
+    padding: 3px 8px;
+    font-size: 12px;
+    font-family: inherit;
+  }
+  .bttn-pill.bttn-xs:hover,
+  .bttn-pill.bttn-xs:focus {
+    box-shadow: 0 1px 4px rgba(58,51,53,0.3);
+  }
+  .bttn-pill.bttn-sm {
+    padding: 4px 10px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  .bttn-pill.bttn-sm:hover,
+  .bttn-pill.bttn-sm:focus {
+    box-shadow: 0 1px 6px rgba(58,51,53,0.3);
+  }
+  .bttn-pill.bttn-md {
+    font-size: 20px;
+    font-family: inherit;
+    padding: 5px 12px;
+  }
+  .bttn-pill.bttn-md:hover,
+  .bttn-pill.bttn-md:focus {
+    box-shadow: 0 1px 8px rgba(58,51,53,0.3);
+  }
+  .bttn-pill.bttn-lg {
+    padding: 8px 15px;
+    font-size: 24px;
+    font-family: inherit;
+  }
+  .bttn-pill.bttn-lg:hover,
+  .bttn-pill.bttn-lg:focus {
+    box-shadow: 0 1px 10px rgba(58,51,53,0.3);
+  }
+  .bttn-pill.bttn-default {
+    background: #fff;
+    color: #1d89ff;
+  }
+  .bttn-pill.bttn-default:hover,
+  .bttn-pill.bttn-default:focus {
+    color: #1d89ff;
+  }
+  .bttn-pill.bttn-default:before,
+  .bttn-pill.bttn-default:after {
+    background: #1d89ff;
+  }
+  .bttn-pill.bttn-primary {
+    background: #1d89ff;
+    color: #fff;
+  }
+  .bttn-pill.bttn-primary:hover,
+  .bttn-pill.bttn-primary:focus {
+    color: #fff;
+  }
+  .bttn-pill.bttn-primary:before,
+  .bttn-pill.bttn-primary:after {
+    background: #fff;
+  }
+  .bttn-pill.bttn-warning {
+    background: #feab3a;
+    color: #fff;
+  }
+  .bttn-pill.bttn-warning:hover,
+  .bttn-pill.bttn-warning:focus {
+    color: #fff;
+  }
+  .bttn-pill.bttn-warning:before,
+  .bttn-pill.bttn-warning:after {
+    background: #fff;
+  }
+  .bttn-pill.bttn-danger {
+    background: #ff5964;
+    color: #fff;
+  }
+  .bttn-pill.bttn-danger:hover,
+  .bttn-pill.bttn-danger:focus {
+    color: #fff;
+  }
+  .bttn-pill.bttn-danger:before,
+  .bttn-pill.bttn-danger:after {
+    background: #fff;
+  }
+  .bttn-pill.bttn-success {
+    background: #28b78d;
+    color: #fff;
+  }
+  .bttn-pill.bttn-success:hover,
+  .bttn-pill.bttn-success:focus {
+    color: #fff;
+  }
+  .bttn-pill.bttn-success:before,
+  .bttn-pill.bttn-success:after {
+    background: #fff;
+  }
+  .bttn-pill.bttn-royal {
+    background: #bd2df5;
+    color: #fff;
+  }
+  .bttn-pill.bttn-royal:hover,
+  .bttn-pill.bttn-royal:focus {
+    color: #fff;
+  }
+  .bttn-pill.bttn-royal:before,
+  .bttn-pill.bttn-royal:after {
+    background: #fff;
+  }
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}

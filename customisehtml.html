@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <a href='mainpagehtml.html'><title>mindful</title></a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="customisecss.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <transition name="page" :duration="1300">
+    <div class="page" :is="page" @change-page="onChangePage"></div>
+  </transition>
+</div>
+<script id="start" type="text/x-template">
+  <div class="start">
+    <div class="inner"> 
+      <h1 class="title enter-1">mindful</h1>
+	  <p>Why do you want to meditate?</p>
+      <div class="button-wrapper enter-2">
+    <button class="button button-start" type="button" @click="$emit('change-page', 'next')" style="height:200px;width:500px"> <span class="button-text">General Wellbeing</span></button>
+		<p></p>
+		<button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Reducing Anxiety</span></button>
+		<p></p>
+		<button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Improving Sleep</span></button>
+		<p></p>
+		<button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Become Calmer</span></button>
+      </div>
+    </div>
+  </div>
+</script>
+<script id="next" type="text/x-template">
+  <div class="next">
+    <div class="inner">
+      <h1 class="title enter-2">mindful</h1>
+	  <p>Where do you find the most relaxing?</p>
+      <div class="button-wrapper enter-2">
+    <a href='finalpagehtml.html'><button class="button button-start" type="button" @click="$emit('change-page', 'next')" style="height:200px;width:500px"> <span class="button-text">Home</span></button></a>
+		<p></p>
+		<a href='finalpagehtml.html'><button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Public Park</span></button></a>
+		<p></p>
+		<a href='finalpagehtml.html'><button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Gym</span></button></a>
+		<p></p>
+		<a href='finalpagehtml.html'><button class="button button-start" type="button" @click="$emit('change-page', 'next')"style="height:200px;width:500px"> <span class="button-text">Beach</span></button></a>
+      </div>
+      <div class="button-wrapper enter-5">
+        <button class="button button-next" type="button" @click="$emit('change-page', 'start')"><span class="button-text">Back</span></button>
+      </div>
+    </div>
+  </div>
+</script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js'></script><script  src="customisejava.js"></script>
+
+</body>
+</html>
